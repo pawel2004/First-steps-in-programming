@@ -24,7 +24,7 @@ class Pesel_Checker:
         self.pesel = list(self.pesel)
         if len(self.pesel) == 11:
             self.date_pesel = self.pesel[0], self.pesel[1], self.pesel[2], self.pesel[3], self.pesel[4], self.pesel[5]
-            self.plec = int(self.pesel[8])
+            self.plec = int(self.pesel[9])
             self.year = int(self.pesel[0] + self.pesel[1])
             self.month = int(self.pesel[2] + self.pesel[3])
             self.day = self.pesel[4] + self.pesel[5]
